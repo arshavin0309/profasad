@@ -360,6 +360,72 @@ main .container {
 .painted {
     background: url(/img/painted.png) center / cover no-repeat;
 }
+.main h3,
+.main .h3 {
+    color: var(--white);
+}
+.facades p {
+    max-width: 860px;
+    margin: auto;
+    text-align: center;
+}
+.about-us__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 220px;
+    padding: 30px 40px;
+    background: url(/img/about-us.png) center / cover no-repeat;
+}
+.about-us__box .btn {
+    margin: 0;
+}
+.news {
+    text-align: center;
+}
+.news__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    padding: 0;
+    list-style: none;
+}
+.news__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-height: 350px;
+    justify-content: end;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.news__item > * {
+    margin: 0;
+}
+.news__date {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--accent);
+}
+.news__item p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.news__item--1 {
+    background-image: url(/img/news-1.png);
+}
+.news__item--2 {
+    background-image: url(/img/news-2.png);
+}
+.news__item--3 {
+    background-image: url(/img/news-3.png);
+}
+
+
+
 
 
 
@@ -474,6 +540,14 @@ footer .container {
     .facades__list {
         display: flex;
         flex-direction: column;
+    }
+    .hero__list {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us__box {
+        align-items: start;
+        flex-direction: column-reverse;
     }
     .footer__top {
         justify-content: center;
