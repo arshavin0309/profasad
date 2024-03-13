@@ -172,6 +172,7 @@ main .container {
     padding: 17px 20px;
     color: var(--white);
     background: #a2a2a2b5;
+    background: #a2a2a22e;
     border: 1px solid var(--white);
     border-radius: 50px;
     text-decoration: none;
@@ -204,6 +205,19 @@ main .container {
     width: 100%;
     height: 100%;
     padding: 15px 20px;
+    background: linear-gradient(180deg, rgba(23, 23, 23, 0.9) 0%, rgba(23, 23, 23, 0) 100%);
+    border-radius: 10px;
+}
+.swiper__box h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.swiper__box .btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--light-greytext);
 }
 .swiper-button__box {
     display: flex;
@@ -267,9 +281,11 @@ main .container {
     display: grid;
     grid-template-columns: repeat(17, 1fr);
     gap: 30px;
+    overflow: auto;
 }
 .gallery img {
     width: 100%;
+    min-width: 160px;
     height: 200px;
     border-radius: 10px;
     object-fit: cover;
@@ -305,10 +321,45 @@ main .container {
 .gallery img:nth-child(10) {
     grid-column: 14/18;
 }
-
-
-
-
+.painted__hero {
+    background: url(/img/painted-hero.jpg) center / cover no-repeat;
+}
+.painted__hero .btn {
+    border-color: var(--light-greytext);
+    color: var(--light-greytext);
+}
+.popular__title {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.neomatt__hero {
+    background: url(/img/neomatt-hero.jpg) center / cover no-repeat;
+}
+.neomatt__hero .btn {
+    border-color: var(--light-greytext);
+    color: var(--light-greytext);
+}
+.hero__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+.hero__item {
+    min-height: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(47, 47, 47, 0) 31.88%, #2F2F2F 100%);
+}
+.hero__item h2 {
+    color: var(--white);
+}
+.pvcfilm {
+    background: url(/img/pvcfilm.png) center / cover no-repeat;
+}
+.painted {
+    background: url(/img/painted.png) center / cover no-repeat;
+}
 
 
 
