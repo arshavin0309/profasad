@@ -194,6 +194,7 @@ main .container {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    object-position: top;
     border-radius: 10px;
 }
 .popular .swiper-slide img {
@@ -437,7 +438,7 @@ main .container {
     align-items: center;
 }
 .partners__list img {
-    width: 100%;
+    max-width: 100%;
 }
 .about-us__hero {
     background: url(/img/about-us-hero.png) center / cover no-repeat;
@@ -495,9 +496,38 @@ main .container {
 .gallery-3 img {
     width: 100%;
 }
-
-
-
+.team__post {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--accent);
+}
+.team__name {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+.swiper__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.swiper__container .swiper-button__box {
+    margin: 0;
+}
+.swiper__container .swiper-pagination {
+    position: initial;
+    width: auto;
+}
+.swiper-pagination-bullet-active {
+    background: var(--accent);
+}
 
 
 
