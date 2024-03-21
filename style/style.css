@@ -648,6 +648,42 @@ main .container {
 .contacts-info h2 {
     margin: 0;
 }
+.nav-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.nav-links a {
+    padding: 7px 15px;
+    color: var(--light-greytext);
+    border: 1px solid var(--light-greytext);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.pagination a {
+    padding: 7px 15px;
+    color: var(--light-greytext);
+    border: 1px solid var(--light-greytext);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+}
+a.pagination--active {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+
+
+
 
 
 
