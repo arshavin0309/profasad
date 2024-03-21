@@ -79,6 +79,9 @@ p {
     line-height: 27px;
     color: var(--light-greytext);
 }
+.white-back p {
+    font-size: clamp(14px, 3vw, 16px);
+}
 .subtitle_2 {
     text-transform: uppercase;
     font-weight: 400;
@@ -87,7 +90,7 @@ p {
     color: var(--light-greytext);
 }
 .accent {
-    color: var(--accent);
+    color: var(--accent) !important;
 }
 header {
     margin-bottom: 30px;
@@ -680,6 +683,81 @@ a.pagination--active {
     color: var(--accent);
     border-color: var(--accent);
 }
+.white-back {
+    padding: 40px 25px;
+    padding-bottom: 90px;
+    background: #FFFFFFF2;
+    border-radius: 10px;
+}
+.white-back h1,
+.white-back .h1,
+.white-back h2,
+.white-back .h3,
+.white-back h4,
+.white-back .h4,
+.white-back p,
+.white-back div {
+    color: #000;
+}
+.white-back h1 {
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
+img {
+    border-radius: 10px;
+}
+.attention {
+    position: relative;
+    margin-left: 65px;
+    padding: 25px 30px;
+    background: var(--white);
+    border-radius: 10px;
+    font-size: clamp(14px, 3vw, 16px);
+    font-style: italic;
+    font-weight: 700;
+}
+.attention::before {
+    position: absolute;
+    left: 10px;
+    top: 10%;
+    content: '';
+    display: block;
+    height: 80%;
+    width: 1px;
+    background: var(--accent);
+}
+.main-img {
+    margin-top: 50px;
+    max-width: 100%;
+}
+.nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 15px;
+}
+.nav-btns__back,
+.nav-btns__next {
+    padding: 10px 15px;
+    color: var(--light-greytext);
+    border: 1px solid var(--light-greytext);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: clamp(10px, 3vw, 14px);
+}
+.nav-btns__back::before {
+    content: '<<<';
+    margin-right: 10px;
+}
+.nav-btns__next::after {
+    content: '>>>';
+    margin-left: 10px;
+}
+
 
 
 
@@ -850,12 +928,30 @@ footer .container {
     }
 }
 @media (max-width: 425px) {
+    .attention {
+        margin-left: 0;
+    }
     h1, .h1,
     h2, .h2,
     h3, .h3,
     h4, .h4 {
         color: var(--white) !important;
         text-align: center !important;
+    }
+    
+    .white-back h1,
+    .white-back .h1,
+    .white-back h2,
+    .white-back .h2,
+    .white-back h3,
+    .white-back .h3,
+    .white-back h4,
+    .white-back .h4 {
+        color: #000 !important;
+        line-height: initial;
+    }
+    .white-back .h2 {
+        font-size: clamp(24px, 4vw, 36px);
     }
     .contacts-info {
         align-items: initial;
