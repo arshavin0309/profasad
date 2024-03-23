@@ -791,7 +791,23 @@ div.tags--active {
 .answers h3 {
     text-align: left;
 }
-
+.no-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: var(--grey);
+    border-radius: 10px;
+    padding: 100px;
+}
+.no-page > * {
+    margin: 0;
+}
+.no-page-image {
+    max-width: 415px;
+    max-height: 415px;
+    width: 100%;
+}
 
 
 
@@ -963,8 +979,17 @@ footer .container {
     .answers__item {
         margin-bottom: 30px;
     }
+    .no-page {
+        padding: 30px 10px;
+    }
 }
 @media (max-width: 425px) {
+    .subtitle_1 {
+        text-align: center;
+    }
+    .subtitle_2 {
+        text-align: center;
+    }
     .attention {
         margin-left: 0;
     }
