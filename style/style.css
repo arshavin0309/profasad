@@ -907,6 +907,7 @@ div.tags--active {
     background: #171717;
 }
 .color__btn {
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1170,5 +1171,10 @@ footer .container {
         align-items: center;
         padding: 10px;
         text-align: center;
+    }
+}
+@media (max-width: 360px) {
+    .color__item {
+        overflow: auto;
     }
 }
