@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body class="black-back">
+    <header>
+        <div class="container">
+            <a class="logo" href="/"><img src="img/logo.svg" alt="логотип"></a>
+            <nav class="desktop header__nav">
+                <a href="">О нас</a>
+                <a href="">Каталог</a>
+                <a href="">Где купить</a>
+                <a href="">Портфолио</a>
+                <a href="">новости</a>
+                <a href="">faq</a>
+                <a href="">контакты</a>
+            </nav>
+            <div class="desktop header__contacts">
+                <a class="header__tel" href="tel:+7(343)-328-01-33">+7(343)-328-01-33</a>
+                <a class="header__mail" href="mailto:zakaz@profasad.pro">zakaz@profasad.pro</a>
+            </div>
+            <div class="header__btns">
+                <button><img src="img/lk.svg" alt="личный кабинет"></button>
+                <button class="mobile"><img src="img/cart.svg" alt="корзина"></button>
+                <button class="mobile"><img src="img/menu.svg" alt="меню"></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <div class="subtitle_2">выбор и заказ фасадов</div>
+                <h1>Конструктор фасадов painted<span class="accent">ed</span></h1>
+
+                <div class="grid-2">
+                    <div class="color__item">
+                        <div class="color__title">Выберите цвет или укажите точный цвет по RAL:</div>
+                        <div class="color__boxes">
+                            <div class="color__box">
+                                <img class="color__img" src="img/color-15.png" alt="">
+                                <div>
+                                    <div class="color__name">Цвет:</div>
+                                    <div class="color__option">Серо-бежевый</div>
+                                </div>
+                            </div>
+                            <div class="color__box color__box--other">
+                                <div class="color__name">RAL 1019</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="choice">
+                    <h4>выберите фрезеровку фасадов</h4>
+
+                    <div class="swiper swiper-choice">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-active"><img src="img/choice-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/choice-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/choice-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/choice-4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/choice-5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="img/choice-6.jpg" alt=""></div>
+                        </div>
+                        <div class="choice__discription">Название выбранной фрезеровки: <span>Без фрезеровки</span></div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <label for="choice">
+                            <input id="choice" type="checkbox">Своя фрезеровка</input>
+                        </label>
+                    </div>
+
+                </section>
+
+
+                <h4>Размер и количество:</h4>
+                <div class="grid-2">
+                    <div class="color__item">
+                        <div class="color__title">РАЗМЕР И КОЛИЧЕСТВО:</div>
+                        <div class="color__boxes">
+                            <div class="color__sizes">
+                                <div class="color__size">
+                                    <div class="color__size--name">Ширина (мм):</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <img src="img/x.svg" alt="">
+                                <div class="color__size">
+                                    <div class="color__size--name">Высота (мм):</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <img src="img/x.svg" alt="">
+                                <div class="color__size">
+                                    <div class="color__size--name">Толщина(мм)</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <img src="img/x.svg" alt="">
+                                <div class="color__size">
+                                    <div class="color__size--name">Количество</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <button class="color__delete"><img src="img/delete.svg" alt=""></button>
+                            </div>
+                            <div class="color__sizes">
+                                <div class="color__size">
+                                    <div class="color__size--name">Ширина (мм):</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <img src="img/x.svg" alt="">
+                                <div class="color__size">
+                                    <div class="color__size--name">Высота (мм):</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <img src="img/x.svg" alt="">
+                                <div class="color__size">
+                                    <div class="color__size--name">Толщина(мм)</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <img src="img/x.svg" alt="">
+                                <div class="color__size">
+                                    <div class="color__size--name">Количество</div>
+                                    <input type="text" class="color__size--input">
+                                </div>
+                                <button class="color__delete"><img src="img/delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <button class="btn color__btn">добавить размер</button>
+                    </div>
+                </div>
+                <div>
+                    <label for="checkbox">
+                        <input type="checkbox" name="" id="checkbox">
+                        Требуется присадка фасадов?
+                    </label>
+                    <label for="file">
+                        Загрузите или перетащите сюда файл с технической документацией (базис- мебельщик)
+                        <input type="file" name="" id="file">
+                    </label>
+                </div>
+            </section>
+
+            <section class="order">
+                <div class="container">
+                    <div class="order__list">
+                        <div class="order__title">
+                            <h3>Стоимость и заказ: <span class="light-greytext">00 000₽</span></h3>
+                            <a href="" class="btn btn-accent">Оформить заказ</a>
+                        </div>
+                        <p>*Стоимость указана без расчета присадки и будет согласована дополнительно.(текст виден только если присадка требуется)</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__top">
+                <a href="/"><img src="img/logo.svg" alt="логотип"></a>
+                <div class="footer__info">Мы предложим Вам лучшее</div>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <div class="footer__title">Адрес:</div>
+                    <address class="footer__discription">РФ, Екатеринбург, ул. Дагенстанская, 41</address>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__title">Телефон:</div>
+                    <a href="tel:+7(343)-328-01-33" class="footer__discription">+7(343)-328-01-33</a>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__title">Телефон:</div>
+                    <a href="mailto:zakaz@profasad.pro" class="footer__discription">zakaz@profasad.pro</a>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__title">Мессенджеры:</div>
+                    <div class="footer__social">
+                        <a href=""><img src="img/telegram.svg" alt="телеграм"></a>
+                        <a href=""><img src="img/whatsapp.svg" alt="whatsapp"></a>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__title">Соц сети:</div>
+                    <div class="footer__social">
+                        <a href=""><img src="img/vk.svg" alt="вк"></a>
+                        <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__title">Навигация:</div>
+                    <nav class="footer__nav">
+                        <a href="">NEOMATT</a>
+                        <a href="">О нас</a>
+                        <a href="">PVC Film</a>
+                        <a href="">Где купить</a>
+                        <a href="">Painted</a>
+                        <a href="">Контакты</a>
+                    </nav>
+                </li>
+            </ul>
+            <div class="footer__bottom">
+                <div>©2023 PRO ФАСАД | Все права защищены</div>
+                <div>Политика Конфиденциальности</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
