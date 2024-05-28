@@ -746,6 +746,9 @@ main .container {
 .form__info {
     display: block;
     margin-top: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
 }
 
 .form .h3 {
@@ -1047,7 +1050,7 @@ div.tags--active {
 .color__option {
     margin-top: 5px;
     color: var(--white);
-    font-size: 16px;
+    font-size: clamp(14px, 3vw, 16px);
 }
 
 .color__sizes {
@@ -1269,6 +1272,7 @@ footer .container {
 .color__box--other .color__name {
     font-size: 20px;
     line-height: 30px;
+    white-space: nowrap;
 }
 
 .swiper-buttons {
@@ -1380,7 +1384,7 @@ footer .container {
     display: block;
     width: 26px;
     height: 26px;
-    background: url(../img/catr-delete.svg) center / contain no-repeat;
+    background: url(../img/cart-delete.svg) center / contain no-repeat;
 }
 
 .cart__box {
@@ -1391,14 +1395,37 @@ footer .container {
 
 .cart__box .color__box {
     padding: 0;
+    background: none;
 }
 
 .cart__box .color__sizes {
     padding: 0;
 }
 
-.cart__label {
+.cart .color__box--other {
+    padding: 25px;
+}
+
+.cart__name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.cart__content {
+    min-width: 490px;
+    display: grid;
+    gap: 15px;
+}
+
+.cart__item {
     display: flex;
+    gap: 30px;
+}
+
+label {
+    display: flex !important;
     align-items: center;
     gap: 15px;
     font-size: 16px;
@@ -1407,21 +1434,147 @@ footer .container {
     color: var(--white);
 }
 
-.cart__label input {
+label input[type="checkbox"] {
     width: 22px;
     height: 22px;
     margin: 0;
 }
 
+.cart__info {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--white);
+}
 
+.cart__info a {
+    text-decoration: underline;
+}
 
+.cart__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.cart__buttons .btn {
+    padding: 0;
+    border: none;
+    background: none;
+}
 
+.cart__buttons .delete {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--light-greytext);
+}
+
+.cart__buttons .delete::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../img/cart-delete-grey.svg) center / contain no-repeat;
+}
+
+.cart__option {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+
+.download {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--light-greytext);
+}
 
 
 
 
 @media (max-width: 1200px) {
+    .cart .subtitle_1 {
+        text-align: center;
+    }
+
+    .cart h1 {
+        text-align: center;
+    }
+
+    .cart h4 {
+        text-align: center;
+    }
+
+    .color__sizes {
+        background: none;
+    }
+
+    .color__boxes{
+        justify-content: center;
+    }
+
+    .cart__option {
+        justify-content: center;
+    }
+
+    .cart__box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cart__title {
+        text-align: center;
+    }
+
+    .price {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart__name {
+        text-align: center;
+    }
+
+    .cart .color__box--other {
+        padding: 5px 20px;
+        justify-content: center;
+    }
+
+    .price__box {
+        text-align: center;
+    }
+
+    .cart__content {
+        min-width: initial;
+    }
+
+    .cart__item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .cart section {
+        padding: 0;
+        gap: 20px;
+        background: none;
+    }
+
+    .color__img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .color__box {
+        gap: 10px;
+    }
+
     .mobile {
         display: flex;
     }
@@ -1432,6 +1585,23 @@ footer .container {
 
     .questions {
         grid-template-columns: 1fr;
+    }
+
+    .cart__buttons {
+        flex-direction: column-reverse;
+    }
+
+    .form {
+        padding: 10px !important;
+        background: var(--grey) !important;
+    }
+
+    .form__info {
+        margin-top: 0;
+    }
+
+    .footer__info {
+        text-align: center;
     }
 }
 
@@ -1476,7 +1646,11 @@ footer .container {
     .color__sizes {
         padding: 0;
         background: none;
-        gap: 10px;
+        gap: 5px;
+    }
+
+    .color__boxes {
+        overflow: auto;
     }
 
     .grid-2 {
