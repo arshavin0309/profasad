@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'RF Dewi Extended';
-    src: url(/fonts/RFDewiExtended-Regular.woff2);
+    src: url(/assets/fonts/RFDewiExtended-Regular.woff2);
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'RF Dewi Extended';
-    src: url(/fonts/RFDewiExtended-Bold.woff2);
+    src: url(/assets/fonts/RFDewiExtended-Bold.woff2);
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'RF Dewi Extended';
-    src: url(/fonts/RFDewiExtended-Light.woff2);
+    src: url(/assets/fonts/RFDewiExtended-Light.woff2);
     font-weight: 400;
 }
 
@@ -213,7 +213,7 @@ main .container {
     min-height: 480px;
     border-radius: 10px;
     padding: 30px 70px;
-    background: url(../img/hero.jpg) center / cover no-repeat;
+    background: url(/assets/images/main/hero.jpg) center / cover no-repeat;
 }
 
 .btn {
@@ -423,7 +423,7 @@ main .container {
 }
 
 .painted__hero {
-    background: url(../img/painted-hero.jpg) center / cover no-repeat;
+    background: url(/assets/images/main/painted-hero.jpg) center / cover no-repeat;
 }
 
 .painted__hero .btn {
@@ -437,7 +437,7 @@ main .container {
 }
 
 .neomatt__hero {
-    background: url(../img/neomatt-hero.jpg) center / cover no-repeat;
+    background: url(/assets/images/main/neomatt-hero.jpg) center / cover no-repeat;
 }
 
 .neomatt__hero .btn {
@@ -464,11 +464,11 @@ main .container {
 }
 
 .pvcfilm {
-    background: url(../img/pvcfilm.png) center / cover no-repeat;
+    background: url(/assets/images/main/pvcfilm.png) center / cover no-repeat;
 }
 
 .painted {
-    background: url(../img/painted.png) center / cover no-repeat;
+    background: url(/assets/images/main/painted.png) center / cover no-repeat;
 }
 
 .main h3,
@@ -488,7 +488,7 @@ main .container {
     align-items: flex-end;
     min-height: 220px;
     padding: 30px 40px;
-    background: url(../img/about-us.png) center / cover no-repeat;
+    background: url(/assets/images/main/about-us.png) center / cover no-repeat;
 }
 
 .about-us__box .btn {
@@ -537,15 +537,15 @@ main .container {
 }
 
 .news__item--1 {
-    background-image: url(../img/news-1.png);
+    background-image: url(/assets/images/main/news-1.png);
 }
 
 .news__item--2 {
-    background-image: url(../img/news-2.png);
+    background-image: url(/assets/images/main/news-2.png);
 }
 
 .news__item--3 {
-    background-image: url(../img/news-3.png);
+    background-image: url(/assets/images/main/news-3.png);
 }
 
 .partners__list {
@@ -561,7 +561,7 @@ main .container {
 }
 
 .about-us__hero {
-    background: url(../img/about-us-hero.png) center / cover no-repeat;
+    background: url(/assets/images/main/about-us-hero.png) center / cover no-repeat;
     min-height: 400px;
 }
 
@@ -1210,11 +1210,15 @@ footer .container {
     gap: 20px;
 }
 
+.footer__bottom a {
+    color: var(--light-greytext);
+}
+
 .header__nav--active {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 90px;
     left: 7px;
     right: 7px;
     bottom: 0;
@@ -1384,7 +1388,7 @@ footer .container {
     display: block;
     width: 26px;
     height: 26px;
-    background: url(../img/cart-delete.svg) center / contain no-repeat;
+    background: url(/assets/images/main/cart-delete.svg) center / contain no-repeat;
 }
 
 .cart__box {
@@ -1478,7 +1482,7 @@ label input[type="checkbox"] {
     display: block;
     width: 26px;
     height: 26px;
-    background: url(../img/cart-delete-grey.svg) center / contain no-repeat;
+    background: url(/assets/images/main/cart-delete-grey.svg) center / contain no-repeat;
 }
 
 .cart__option {
