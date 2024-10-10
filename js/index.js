@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener("DOMContentLoaded", () => {
     let headerNav = document.querySelector('.header__nav')
-    document.querySelector('.header__btns').addEventListener('click', () => {
+    document.querySelector('.burger-btn').addEventListener('click', () => {
         headerNav.classList.toggle('header__nav--active')
     })
 })
